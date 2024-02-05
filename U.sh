@@ -2,5 +2,5 @@
 git add .
 git commit -m " First Test
 Hugo-Web-App
-add bunch of pages for test"
+build with hugo command"
 git push -u origin main 
