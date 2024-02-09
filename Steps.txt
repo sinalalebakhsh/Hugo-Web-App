@@ -1,0 +1,51 @@
+
+=================================================
+
+            It's not first step
+
+=================================================
+1- Create in content/_index.md
+_index.md
+=================================================
+2- add these content in _index.md
+This is my portfolio.
+On this site, you'll find
+* My biography
+* My projects
+* My résumé
+=================================================
+3- in Terminal
+hugo new about.md
+=================================================
+4- change this line in about.md
+draft = false
+=================================================
+5- Add this after +++ in about.md
++++
+This is about page
+=================================================
+6- in Terminal
+mkdir layouts/_default/
+=================================================
+7- in Terminal
+cp layouts/index.html layouts/_default/single.html
+=================================================
+8- Add this line after <h1>{{ .Site.Title}}</h1> of layouts/_default/single.html
+    ...
+    <h1>{{ .Site.Title}}</h1>
+    <h2>{{ .Title }}</h2>
+    ...
+=================================================
+9- Save the file and Then, start up the development server again: in Terminal
+hugo server
+
+Output:
+    Visit http://localhost:1313/about and you’ll see your new page:
+=================================================
+=================================================
+=================================================
+=================================================
+=================================================
+=================================================
+=================================================
+=================================================
