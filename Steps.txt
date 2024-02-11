@@ -42,7 +42,62 @@ hugo server
 Output:
     Visit http://localhost:1313/about and you’ll see your new page:
 =================================================
+10- in Terminal
+hugo
+
+Output:
+    This generates the pages for your site in a new directory named public. 
+    If you look at that directory’s contents, 
+    you’ll see these files and directories:
+    public/
+    ├── about
+    │
+    └── index.html
+    ├── categories
+    │
+    └── index.xml
+    ├── index.html
+    ├── index.xml
+    ├── sitemap.xml
+    └── tags
+    └── index.xml
+    This public folder is your entire static site. To host it, you could upload the con-
+    tents of the public folder to your web server, or upload it to your CDN.
 =================================================
+11- in Terminal (for delete last built and rebuild)
+rm -r public && hugo
+=================================================
+12- Or
+hugo --cleanDestinationDir
+=================================================
+
+    This process removes whitespace characters, 
+    resulting in smaller file sizes that will make the site
+    download faster for your visitors.
+
+=================================================
+13- in Terminal
+hugo --cleanDestinationDir --minify 
+
+Output:
+    The public/index.html now looks something like this:
+        <!doctype html><html lang=en-US><head><meta name=generator content="Hugo 0.120.4"><meta charset=utf-8><title>AcronProject</title></head><body><h1>AcronProject</h1><h1 id=this-is-my-portfolio>This is my portfolio.</h1><p>On this site, you&rsquo;ll find</p><ul><li>My biography</li><li>My projects</li><li>My résumé</li></ul></body></html>
+=================================================
+14- 
+=================================================
+15-
+=================================================
+16-
+=================================================
+17-
+=================================================
+18-
+=================================================
+19-
+=================================================
+20-
+=================================================
+21-
 =================================================
 =================================================
 =================================================
